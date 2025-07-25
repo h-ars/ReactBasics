@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    @apply bg-neutral-800
+  }
+
+  h1 {
+    @apply text-7xl font-extrabold text-neutral-50
+  }
+
+  h2 {
+    @apply text-xl 
+  }
+
+  h2:hover {
+    @apply underline underline-offset-8
+  }
+
+  h3 {
+    @apply text-[14px] text-amber-500
+  }
+
+  .navObj {
+    @apply h-[10vh] flex align-middle items-center pl-6 pr-6
+  }
+
+  .mobileNavObj {
+    @apply h-[7vh] flex align-middle items-center pl-3 pr-3
+  }
+
+  .mobileNavObj h2 {
+    @apply text-[16px]
+  }
+
+  .btn {
+    box-shadow: 6px 6px 0 #e5e5e5;
+    background-color: #f59e0b;
+  }
+
+  .btn:hover {
+    box-shadow: 6px 6px 0 #f59e0b;
+    background-color: #e5e5e5;
+    scale: 1.1;
+  }
+
+  input {
+    border-radius: 10px;
+    @apply w-[70vw] border-4 border-neutral-300 bg-neutral-50 pl-5 pr-5 pt-2 pb-2
+  }
+
+  .submitBtn {
+    box-shadow: 9px 6px #b3b3b3;
+    @apply w-[70vw] bg-neutral-950 pl-5 pr-5 pt-2 pb-2
+  }
+
+  .submitBtn p{
+    @apply text-neutral-200 font-mono font-extrabold text-[20px]
+  }
+
+  .submitBtn:hover {
+    background-color: #f59e0b;
+    box-shadow: 16px 9px #b3b3b3;
+  }
+
+  .submitBtn:hover p{
+    @apply text-neutral-950
+  }
+}
