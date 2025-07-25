@@ -11,6 +11,7 @@ const Login = () => {
 
     async function onSubmit(data) {
         await new Promise((resolve) => setTimeout(resolve, 5000));
+        alert('Form Submitted');
     }
 
     return (
